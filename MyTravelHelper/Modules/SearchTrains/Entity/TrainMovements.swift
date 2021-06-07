@@ -18,9 +18,9 @@ struct TrainMovementsData: Codable {
 
 struct TrainMovement: Codable {
     var trainCode: String
-    var locationCode: String
-    var locationFullName: String
-    var expDeparture:String
+    var locationCode: String?
+    var locationFullName: String?
+    var expDeparture:String?
 
     enum CodingKeys: String, CodingKey {
         case trainCode = "TrainCode"
@@ -36,13 +36,17 @@ struct TrainMovement: Codable {
         self.expDeparture = expDeparture
     }
 
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        let trainCode = try values.decode(String.self, forKey: .trainCode)
-        let locationCode = try values.decode(String.self, forKey: .locationCode)
-        let locationFullName = try values.decode(String.self, forKey: .locationFullName)
-        let departure = try values.decode(String.self, forKey: .expDeparture)
-        self.init(trainCode: trainCode, locationCode: locationCode, locationFullName: locationFullName,expDeparture: departure)
+    init?(decoder: Decoder) {
+        do {
+            let values = try decoder.container(keyedBy: CodingKeys.self)
+            let trainCode = try values.decode(String.self, forKey: .trainCode)
+            let locationCode = try values.decode(String.self, forKey: .locationCode)
+            let locationFullName = try values.decode(String.self, forKey: .locationFullName)
+            let departure = try values.decode(String.self, forKey: .expDeparture)
+            self.init(trainCode: trainCode, locationCode: locationCode, locationFullName: locationFullName, expDeparture: departure)
+        } catch {
+            return nil
+        }
     }
 }
 
