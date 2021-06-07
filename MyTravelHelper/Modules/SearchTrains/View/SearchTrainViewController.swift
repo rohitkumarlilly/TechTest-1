@@ -42,7 +42,7 @@ class SearchTrainViewController: UIViewController {
     }
 }
 
-extension SearchTrainViewController:PresenterToViewProtocol {
+extension SearchTrainViewController: PresenterToViewProtocol {
     func showNoInterNetAvailabilityMessage() {
         trainsListTable.isHidden = true
         hideProgressIndicator(view: self.view)

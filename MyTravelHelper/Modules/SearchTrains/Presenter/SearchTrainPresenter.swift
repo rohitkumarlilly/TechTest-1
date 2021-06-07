@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchTrainPresenter:ViewToPresenterProtocol {
+class SearchTrainPresenter: ViewToPresenterProtocol {
     var stationsList:[Station] = [Station]()
 
     func searchTapped(source: String, destination: String) {
@@ -43,7 +43,7 @@ extension SearchTrainPresenter: InteractorToPresenterProtocol {
     func fetchedTrainsList(trainsList: [StationTrain]?) {
         if let _trainsList = trainsList {
             view!.updateLatestTrainList(trainsList: _trainsList)
-        }else {
+        } else {
             view!.showNoTrainsFoundAlert()
         }
     }
