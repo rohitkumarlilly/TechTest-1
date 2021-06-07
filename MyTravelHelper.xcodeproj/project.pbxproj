@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1654AF9B5118F79C1ACB2509 /* Pods_MyTravelHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4A9E0F8C97F8AA92AAA053 /* Pods_MyTravelHelperTests.framework */; };
+		5D5AA6F1266DFD3B0093BFAA /* SearchTrainInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA6F0266DFD3B0093BFAA /* SearchTrainInteractorTest.swift */; };
+		5D5AA6F3266E11820093BFAA /* MockSearchTrainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA6F2266E11820093BFAA /* MockSearchTrainPresenter.swift */; };
+		5D5AA6F5266E11BE0093BFAA /* XCTBlockExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA6F4266E11BE0093BFAA /* XCTBlockExpectation.swift */; };
 		753C8FA422361EC9005FF13B /* TrainMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C8FA122361EC9005FF13B /* TrainMovements.swift */; };
 		753C8FA522361EC9005FF13B /* StationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C8FA222361EC9005FF13B /* StationInfo.swift */; };
 		753C8FA622361EC9005FF13B /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C8FA322361EC9005FF13B /* Stations.swift */; };
@@ -43,6 +46,9 @@
 		11F481535B44216B54872EF2 /* Pods-MyTravelHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravelHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravelHelperTests/Pods-MyTravelHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F515F7A370B032163D445BC /* Pods-MyTravelHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravelHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper.release.xcconfig"; sourceTree = "<group>"; };
 		4A3D05BF450D92647BC863F2 /* Pods-MyTravelHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTravelHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTravelHelper/Pods-MyTravelHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		5D5AA6F0266DFD3B0093BFAA /* SearchTrainInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTrainInteractorTest.swift; sourceTree = "<group>"; };
+		5D5AA6F2266E11820093BFAA /* MockSearchTrainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchTrainPresenter.swift; sourceTree = "<group>"; };
+		5D5AA6F4266E11BE0093BFAA /* XCTBlockExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTBlockExpectation.swift; sourceTree = "<group>"; };
 		753C8FA122361EC9005FF13B /* TrainMovements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainMovements.swift; sourceTree = "<group>"; };
 		753C8FA222361EC9005FF13B /* StationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInfo.swift; sourceTree = "<group>"; };
 		753C8FA322361EC9005FF13B /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				753C8FBD2237367E005FF13B /* SearchTrainPresenterTests.swift */,
+				5D5AA6F0266DFD3B0093BFAA /* SearchTrainInteractorTest.swift */,
+				5D5AA6F2266E11820093BFAA /* MockSearchTrainPresenter.swift */,
+				5D5AA6F4266E11BE0093BFAA /* XCTBlockExpectation.swift */,
 				753F085D223618AE00175107 /* Info.plist */,
 			);
 			path = MyTravelHelperTests;
@@ -434,7 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5AA6F3266E11820093BFAA /* MockSearchTrainPresenter.swift in Sources */,
 				753C8FBE2237367E005FF13B /* SearchTrainPresenterTests.swift in Sources */,
+				5D5AA6F5266E11BE0093BFAA /* XCTBlockExpectation.swift in Sources */,
+				5D5AA6F1266DFD3B0093BFAA /* SearchTrainInteractorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
